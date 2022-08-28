@@ -1,10 +1,10 @@
 {
-  "name": "template-react-typescript-upway",
+  "name": "weather-app",
   "version": "0.0.1",
   "main": "src/index.tsx",
-  "description": "React.js starter with TypeScript, Styled-Components, Jest, Testing-Library",
+  "description": "React.js starter with TypeScript, Styled-Components, Jest, Testing-Library, eslint, prettier, husky",
   "keywords": [
-    "React.js starter",
+    "WeatherApp",
     "React.js",
     "TypeScript",
     "Jest",

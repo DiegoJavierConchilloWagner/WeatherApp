@@ -1,7 +1,7 @@
 <h1 align="center">
     <img alt="template-react-ts" src="https://res.cloudinary.com/zagatti/image/upload/v1595947810/readme/react-ts-template/Al9qmDn_j0eiug.png" />
     <br>
-    React Typescript Upway Template
+    WeatherApp
 </h1>
 
 <p align="center">

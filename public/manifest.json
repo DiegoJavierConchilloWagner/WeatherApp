@@ -1,6 +1,6 @@
 {
-  "short_name": "Upway Template",
-  "name": "Upway Template",
+  "short_name": "WeatherApp",
+  "name": "WeatherApp",
   "id": "/index.html",
   "start_url": "/index.html",
   "display_override": ["fullscreen","standalone","minimal-ui"],
@@ -12,7 +12,7 @@
     "business",
     "education"
   ],
-  "description": "Upway",
+  "description": "WeatherApp",
   "dir": "ltr",
   "lang": "es-ES",
   "orientation": "any",
