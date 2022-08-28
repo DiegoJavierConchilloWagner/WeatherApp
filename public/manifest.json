@@ -1,0 +1,28 @@
+{
+  "short_name": "Upway Template",
+  "name": "Upway Template",
+  "id": "/index.html",
+  "start_url": "/index.html",
+  "display_override": ["fullscreen","standalone","minimal-ui"],
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "categories": [
+    "technology",
+    "business",
+    "education"
+  ],
+  "description": "Upway",
+  "dir": "ltr",
+  "lang": "es-ES",
+  "orientation": "any",
+  "scope": "/",
+  
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

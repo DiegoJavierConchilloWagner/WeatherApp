@@ -1,0 +1,9 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.format": true,
+		// "source.organizeImports": true
+	},
+	"prettier.documentSelectors": ["**/*.{js,jsx,ts,tsx,css,scss,md,json}"],
+}

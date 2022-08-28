@@ -1,0 +1,10 @@
+node_modules
+dist
+build
+lib
+coverage
+public
+OKD
+
+*.md
+*.mdx
