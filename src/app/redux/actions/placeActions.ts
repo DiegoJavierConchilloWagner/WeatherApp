@@ -7,5 +7,4 @@ export const setSelectedPlace = (data: IPlaceMapped) => ({
 
 export const resetPlaceData = () => ({
 	type: Types.resetPlaceData
-	// payload: data
 });

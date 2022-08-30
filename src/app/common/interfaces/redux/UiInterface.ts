@@ -4,4 +4,5 @@ export interface UiInterface {
 	themeMode: ThemeModeType;
 	temperatureUnit: TemperatureUnitType;
 	forecast: ForecastModeType;
+	isCurrentWeatherLoading: boolean;
 }

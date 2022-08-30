@@ -1,37 +1,31 @@
 /* eslint-disable react/require-default-props */
+import { FC, ReactNode } from 'react';
+
+import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet-async';
+
 import { GeolocationIcon } from '@components/GeolocationIcon/GeolocationIcon';
 import { SearchBox } from '@components/SearchBox/SearchBox/SearchBox';
 import { ThemeToggle } from '@components/ThemeToggle/ThemeToggle';
-import { FC, ReactNode } from 'react';
+import { RootState } from '@redux/store/store';
 
 interface Props {
-	// title: string;
-	// description?: string;
-	// keywords?: string;
 	navbar?: boolean;
 	children: ReactNode;
 	rehydrateHandler: () => void;
 }
 
-export const Layout: FC<Props> = ({
-	children,
-	navbar = true,
-	rehydrateHandler
-	// title, description, keywords,
-}) => {
+export const Layout: FC<Props> = ({ children, navbar = true, rehydrateHandler }) => {
+	const {
+		selectedPlace: { name }
+	} = useSelector((state: RootState) => state.placeInterface);
+
 	return (
 		<>
 			{/* <Head> */}
-			{/* <title>{title}</title>
-				<meta name='author' content='Diego Wagner' />
-				<meta name='description' content={description} />
-				<meta name='keywords' content={keywords} /> */}
-
-			{/* Graph meta tags */}
-			{/* <meta property='og:title' content={`Informacion sobre ${title}`} />
-				<meta property='og:description' content={`Esta es la pagina sobre ${title}`} />
-				<meta property='og:image' content={`${origin}/images/banner.png`} /> */}
-			{/* </Head> */}
+			<Helmet>
+				<title>WeatherApp {name ? `- ${name}` : '- Curent Location'}</title>
+			</Helmet>
 
 			{navbar && (
 				<header>

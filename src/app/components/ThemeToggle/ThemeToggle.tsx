@@ -49,7 +49,7 @@ export const ThemeToggle = () => {
 							paddingRight: 2,
 							fontFamily: 'Poppins'
 						}}>
-						<WeatherIcon id={800} icon='01d' size={30} isLoading={false} />
+						<WeatherIcon id={800} icon='01d' size={30} isLoading={false} switcher />
 					</div>
 				}
 				checkedIcon={
@@ -64,7 +64,7 @@ export const ThemeToggle = () => {
 							paddingRight: 2,
 							fontFamily: 'Poppins'
 						}}>
-						<WeatherIcon id={800} icon='01n' size={30} isLoading={false} />
+						<WeatherIcon id={800} icon='01n' size={30} isLoading={false} switcher />
 					</div>
 				}
 			/>

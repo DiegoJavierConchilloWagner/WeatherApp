@@ -40,21 +40,11 @@ Object {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   gap: 3rem;
-}
-
-.c1 div h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-.c1 div p {
-  margin-top: 0px;
-  font-weight: 500;
 }
 
 .c1 h3 {
@@ -62,7 +52,17 @@ Object {
   font-weight: 600;
 }
 
-.c2 {
+.c2 h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.c2 p {
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -78,7 +78,7 @@ Object {
   gap: 1rem;
 }
 
-.c2 p {
+.c3 p {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -90,12 +90,12 @@ Object {
   text-align: center;
 }
 
-.c2 h5 {
+.c3 h5 {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -109,27 +109,27 @@ Object {
   align-items: center;
 }
 
-.c3 div {
+.c4 div {
   margin-right: 0rem;
 }
 
-.c3 div h4 {
+.c4 div h4 {
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-.c3 div h4 span {
+.c4 div h4 span {
   font-weight: 400;
   font-size: 1.2rem;
 }
 
-.c3 div h5 {
+.c4 div h5 {
   font-weight: 400;
   font-size: 1.2rem;
   text-align: center;
 }
 
-.c3 div h5 span {
+.c4 div h5 span {
   font-weight: 400;
   font-size: 1.2rem;
 }
@@ -155,25 +155,25 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c1 div h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width:768px) {
-  .c1 div p {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width:768px) {
   .c1 h3 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width:768px) {
-  .c2 {
+  .c2 h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -183,7 +183,7 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c3 {
+  .c4 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -196,7 +196,7 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c3 div {
+  .c4 div {
     margin-right: 0%;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -206,25 +206,25 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c3 div h4 span {
+  .c4 div h4 span {
     font-size: 1rem;
   }
 }
 
 @media (max-width:768px) {
-  .c3 div h4 {
+  .c4 div h4 {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width:768px) {
-  .c3 div h5 {
+  .c4 div h5 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width:768px) {
-  .c3 div h5 span {
+  .c4 div h5 span {
     font-size: 1rem;
   }
 }
@@ -237,7 +237,9 @@ Object {
         <div
           class="c1"
         >
-          <div>
+          <div
+            class="c2"
+          >
             <h1>
               Curent Location
             </h1>
@@ -248,13 +250,13 @@ Object {
           <h3 />
         </div>
         <div
-          class="c2"
+          class="c3"
         >
           <p>
             Today
           </p>
           <div
-            class="c3"
+            class="c4"
           >
             <div>
               <img
@@ -271,7 +273,7 @@ Object {
                   Feels-Like:
                 </span>
                  
-                ...
+                ..
                 °
               </h4>
               <h5>
@@ -279,7 +281,7 @@ Object {
                   Temperature:
                 </span>
                  
-                ...
+                ..
                 °
               </h5>
             </div>
@@ -325,21 +327,11 @@ Object {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   gap: 3rem;
-}
-
-.c1 div h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-.c1 div p {
-  margin-top: 0px;
-  font-weight: 500;
 }
 
 .c1 h3 {
@@ -347,7 +339,17 @@ Object {
   font-weight: 600;
 }
 
-.c2 {
+.c2 h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.c2 p {
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -363,7 +365,7 @@ Object {
   gap: 1rem;
 }
 
-.c2 p {
+.c3 p {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -375,12 +377,12 @@ Object {
   text-align: center;
 }
 
-.c2 h5 {
+.c3 h5 {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -394,27 +396,27 @@ Object {
   align-items: center;
 }
 
-.c3 div {
+.c4 div {
   margin-right: 0rem;
 }
 
-.c3 div h4 {
+.c4 div h4 {
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-.c3 div h4 span {
+.c4 div h4 span {
   font-weight: 400;
   font-size: 1.2rem;
 }
 
-.c3 div h5 {
+.c4 div h5 {
   font-weight: 400;
   font-size: 1.2rem;
   text-align: center;
 }
 
-.c3 div h5 span {
+.c4 div h5 span {
   font-weight: 400;
   font-size: 1.2rem;
 }
@@ -440,25 +442,25 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c1 div h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width:768px) {
-  .c1 div p {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width:768px) {
   .c1 h3 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width:768px) {
-  .c2 {
+  .c2 h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -468,7 +470,7 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c3 {
+  .c4 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -481,7 +483,7 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c3 div {
+  .c4 div {
     margin-right: 0%;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -491,25 +493,25 @@ Object {
 }
 
 @media (max-width:768px) {
-  .c3 div h4 span {
+  .c4 div h4 span {
     font-size: 1rem;
   }
 }
 
 @media (max-width:768px) {
-  .c3 div h4 {
+  .c4 div h4 {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width:768px) {
-  .c3 div h5 {
+  .c4 div h5 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width:768px) {
-  .c3 div h5 span {
+  .c4 div h5 span {
     font-size: 1rem;
   }
 }
@@ -521,7 +523,9 @@ Object {
       <div
         class="c1"
       >
-        <div>
+        <div
+          class="c2"
+        >
           <h1>
             Curent Location
           </h1>
@@ -532,13 +536,13 @@ Object {
         <h3 />
       </div>
       <div
-        class="c2"
+        class="c3"
       >
         <p>
           Today
         </p>
         <div
-          class="c3"
+          class="c4"
         >
           <div>
             <img
@@ -555,7 +559,7 @@ Object {
                 Feels-Like:
               </span>
                
-              ...
+              ..
               °
             </h4>
             <h5>
@@ -563,7 +567,7 @@ Object {
                 Temperature:
               </span>
                
-              ...
+              ..
               °
             </h5>
           </div>

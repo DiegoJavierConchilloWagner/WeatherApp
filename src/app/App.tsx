@@ -1,3 +1,5 @@
+import { HelmetProvider } from 'react-helmet-async';
+
 import { RootState } from '@redux/store/store';
 import ErrorBoundary from '@routes/components/ErrorBoundary';
 import { Routes } from '@routes/Routes';
@@ -19,13 +21,15 @@ export const App = () => {
 
 	return (
 		<BrowserRouter>
-			<ThemeProvider theme={onSwitchTeme}>
-				<GlobalStyles />
-				<Toast />
-				<ErrorBoundary>
-					<Routes />
-				</ErrorBoundary>
-			</ThemeProvider>
+			<HelmetProvider>
+				<ThemeProvider theme={onSwitchTeme}>
+					<GlobalStyles />
+					<Toast />
+					<ErrorBoundary>
+						<Routes />
+					</ErrorBoundary>
+				</ThemeProvider>
+			</HelmetProvider>
 		</BrowserRouter>
 	);
 };

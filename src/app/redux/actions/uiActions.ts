@@ -14,3 +14,8 @@ export const setForecast = (data: ForecastModeType) => ({
 	type: Types.setForecast,
 	payload: data
 });
+
+export const setIsCurrentWeatherLoading = (data: boolean) => ({
+	type: Types.setIsCurrentWeatherLoading,
+	payload: data
+});

@@ -10,6 +10,7 @@ export enum Types {
 	 */
 	setThemeMode = '[UI] Set theme mode',
 	setTemperatureUnit = '[UI] Set temperature unit',
+	setIsCurrentWeatherLoading = '[UI] Set if current Weather is loading',
 	/*
 	 *  SelectedPlaceInteface
 	 */

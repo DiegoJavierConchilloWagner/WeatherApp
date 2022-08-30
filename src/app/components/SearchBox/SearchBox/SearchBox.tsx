@@ -1,10 +1,16 @@
-import { useEffect, useState, useRef, KeyboardEvent } from 'react';
+import { useEffect, useState, useRef, KeyboardEvent, FC } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { IoSearchOutline } from 'react-icons/io5';
 
 import { IPlaceMapped } from '@common/interfaces';
-import { setSelectedPlace, setCurrentWeather, setWeekWeather, setTwoDaysWeather } from '@redux/actions';
+import {
+	setSelectedPlace,
+	setCurrentWeather,
+	setWeekWeather,
+	setTwoDaysWeather,
+	setIsCurrentWeatherLoading
+} from '@redux/actions';
 import { RootState } from '@redux/store/store';
 import { useGetPlaces, useGetWeather } from '@services/endpoints';
 import { mappedPlaces, notify, weatherMappedInfo } from '@common/utils';
@@ -14,13 +20,14 @@ import { useOnClickOutside, useDebounce } from '@hooks/index';
 import { StyledSearchBox, StyledInput } from '../styled';
 import { SuggestionList } from '../SuggestionList/SuggestionList';
 
-export const SearchBox = () => {
+export const SearchBox: FC = () => {
 	const dispatch = useDispatch();
 
 	const boxRef = useRef(null);
 	const [search, setSearch] = useState<string>('');
-	const [suggestions, setSuggestions] = useState<IPlaceMapped[]>([]);
 	const [focusedInput, setFocusedInput] = useState<boolean>(false);
+
+	const [suggestions, setSuggestions] = useState<IPlaceMapped[]>([]);
 	const [showSuggestions, setShowSuggestions] = useState<boolean>(false);
 
 	const debouncedSearchValue = useDebounce<string>(search, 250);
@@ -38,7 +45,7 @@ export const SearchBox = () => {
 
 	const {
 		isError: isWeatherError,
-		// isLoading: isWeatherLoading,
+		isLoading: isWeatherLoading,
 		requestData: weatherRequestData,
 		data: weatherData
 	} = useGetWeather();
@@ -113,9 +120,14 @@ export const SearchBox = () => {
 	}, [isPlacesError, placesData]);
 
 	useEffect(() => {
-		if (isWeatherError) notify(NotifyErrors.occasionalError);
+		if (isWeatherError) {
+			notify(NotifyErrors.occasionalError);
+			dispatch(setIsCurrentWeatherLoading(false));
+		}
 
 		if (!isWeatherError && weatherData?.status === 200) {
+			dispatch(setIsCurrentWeatherLoading(false));
+
 			const { current, twoDays, week } = weatherMappedInfo(weatherData.data);
 
 			dispatch(setCurrentWeather(current));
@@ -124,6 +136,13 @@ export const SearchBox = () => {
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isWeatherError, weatherData]);
+
+	useEffect(() => {
+		if (isWeatherLoading) {
+			dispatch(setIsCurrentWeatherLoading(true));
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [isWeatherLoading]);
 
 	return (
 		<StyledSearchBox>

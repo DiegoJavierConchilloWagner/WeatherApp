@@ -3,7 +3,8 @@ import { ThemeModes, TemperatureUnit, ForecastMode, UiInterface, ActionType, Typ
 const initialState: UiInterface = {
 	themeMode: ThemeModes.DARK,
 	temperatureUnit: TemperatureUnit.CEL,
-	forecast: ForecastMode.DAYS
+	forecast: ForecastMode.DAYS,
+	isCurrentWeatherLoading: false
 };
 
 export const uiReducer = (state = initialState, action = {} as ActionType) => {
@@ -23,6 +24,13 @@ export const uiReducer = (state = initialState, action = {} as ActionType) => {
 				...state,
 				forecast: action.payload
 			};
+
+		case Types.setIsCurrentWeatherLoading:
+			return {
+				...state,
+				isCurrentWeatherLoading: action.payload
+			};
+
 		default:
 			return state;
 	}

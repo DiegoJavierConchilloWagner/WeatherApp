@@ -22,7 +22,7 @@ export const InfoContainer = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: baseline;
 	gap: 3rem;
 
 	@media (max-width: 768px) {
@@ -31,30 +31,31 @@ export const InfoContainer = styled.div`
 		align-items: center;
 	}
 
-	div {
-		h1 {
-			font-weight: 700;
-			font-size: 2.5rem;
-
-			@media (max-width: 768px) {
-				font-size: 2rem;
-			}
-		}
-		p {
-			margin-top: 0px;
-			font-weight: 500;
-
-			@media (max-width: 768px) {
-				font-size: 0.8rem;
-			}
-		}
-	}
 	h3 {
 		font-size: 2rem;
 		font-weight: 600;
 
 		@media (max-width: 768px) {
 			font-size: 1.5rem;
+		}
+	}
+`;
+
+export const InfoBLock = styled.div`
+	h1 {
+		font-weight: 700;
+		font-size: 2.5rem;
+
+		@media (max-width: 768px) {
+			font-size: 2rem;
+		}
+	}
+	p {
+		margin-top: 0px;
+		font-weight: 500;
+
+		@media (max-width: 768px) {
+			font-size: 0.8rem;
 		}
 	}
 `;

@@ -1,9 +1,12 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 import { FC, useEffect, useMemo, useState } from 'react';
 
 import { iconsProvider } from '@common/index';
+import { useSelector } from 'react-redux';
+import { RootState } from '@redux/store/store';
 import { Loader } from '../Loader/Loader';
 
 interface Props {
@@ -11,9 +14,11 @@ interface Props {
 	icon: string;
 	size: number;
 	isLoading: boolean;
+	switcher?: boolean;
 }
 
-export const WeatherIcon: FC<Props> = ({ id, icon, size, isLoading }) => {
+export const WeatherIcon: FC<Props> = ({ id, icon, size, isLoading, switcher = false }) => {
+	const { isCurrentWeatherLoading } = useSelector((state: RootState) => state.uiInterface);
 	const [image, setImage] = useState();
 	const { day, night } = iconsProvider;
 
@@ -37,6 +42,8 @@ export const WeatherIcon: FC<Props> = ({ id, icon, size, isLoading }) => {
 	useEffect(() => {
 		imageRenderer();
 	}, [imageRenderer]);
+
+	if (isCurrentWeatherLoading && !switcher) return <Loader />;
 
 	return !isLoading ? <img src={image} alt='weather' width={size} height={size} /> : <Loader />;
 };
