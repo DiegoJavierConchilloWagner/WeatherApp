@@ -9,8 +9,8 @@ import { useSelector } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 
-import './styles/global.css';
 import 'react-toastify/dist/ReactToastify.css';
+import './styles/global.css';
 
 export const App = () => {
 	const { themeMode } = useSelector((state: RootState) => state.uiInterface);
