@@ -11,7 +11,7 @@ describe('Example Page', () => {
 	test('should be able to render the GenericNotFound', () => {
 		renderWithThemeAndProvider(<App />);
 
-		const text = screen.getByText(/Something went wrong./i);
+		const text = screen.getByText(/Curent Location/i);
 		expect(text).toBeInTheDocument();
 	});
 });

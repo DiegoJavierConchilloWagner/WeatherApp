@@ -5,30 +5,32 @@ import { ForecastSwitch } from '@components/ForecastSwitch/ForecastSwitch';
 import { ForecastTwoDays } from '@components/ForecastHours/ForecastTwoDays/ForecastTwoDays';
 import { ForecastWeek } from '@components/ForecastWeek/ForecastWeek/ForecastWeek';
 
-import { Welcome } from '@components/Welcome/Welcome';
 import { RootState } from '@redux/store/store';
 
 import { Layout } from '@components/ui/layout/Layout';
+import { useHydrateWeatherStore } from '@hooks/useHydrateWeatherStore';
+import { useState } from 'react';
 import { StyledHome } from './styled';
 
 export const Home = () => {
-	const { selectedPlace } = useSelector((state: RootState) => state.placeInterface);
 	const { forecast } = useSelector((state: RootState) => state.uiInterface);
-	console.log(selectedPlace.name);
+	const [rehydrate, setRehydrate] = useState<boolean>(false);
+	const { isError, isLoading } = useHydrateWeatherStore(rehydrate);
+
+	const rehydrateHandler = () => setRehydrate((prev) => !prev);
+
 	return (
 		<StyledHome>
-			<Layout>
-				{/* {selectedPlace.name !== '' ? (
-					<>
-						<CurrentWeather />
-						<div>
-							<ForecastSwitch />
-							{forecast === 'DAYS' ? <ForecastWeek /> : <ForecastTwoDays />}
-						</div>
-					</>
+			<Layout rehydrateHandler={rehydrateHandler}>
+				<CurrentWeather isLoading={isLoading} isError={isError} />
+
+				{!isError && <ForecastSwitch />}
+
+				{forecast === 'DAYS' ? (
+					<ForecastWeek isLoading={isLoading} />
 				) : (
-					<Welcome />
-				)} */}
+					<ForecastTwoDays isLoading={isLoading} />
+				)}
 			</Layout>
 		</StyledHome>
 	);

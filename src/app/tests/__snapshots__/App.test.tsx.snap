@@ -5,12 +5,18 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <div
+        class="Toastify"
+      />
       <p>
         Cargando..
       </p>
     </div>
   </body>,
   "container": <div>
+    <div
+      class="Toastify"
+    />
     <p>
       Cargando..
     </p>

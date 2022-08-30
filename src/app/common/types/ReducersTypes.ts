@@ -13,7 +13,8 @@ export enum Types {
 	/*
 	 *  SelectedPlaceInteface
 	 */
-	setSelectedPlace = '[Pl] Set selected place',
+	setSelectedPlace = '[PL] Set selected place',
+	resetPlaceData = '[PL] Reset place data',
 	/*
 	 *  WeatherInterface
 	 */

@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example GeolocationIcon should render correcty 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  position: absolute;
+  right: 10%;
+  top: 5.2%;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    right: 30%;
+    top: 0.8rem;
+  }
+}
+
+<body>
+    <div>
+      <div
+        class="c0"
+      >
+        <svg
+          color="white"
+          fill="currentColor"
+          height="35"
+          id="searchIcon"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: white;"
+          viewBox="0 0 16 16"
+          width="35"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+          />
+          <path
+            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": .c0 {
+  position: absolute;
+  right: 10%;
+  top: 5.2%;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    right: 30%;
+    top: 0.8rem;
+  }
+}
+
+<div>
+    <div
+      class="c0"
+    >
+      <svg
+        color="white"
+        fill="currentColor"
+        height="35"
+        id="searchIcon"
+        stroke="currentColor"
+        stroke-width="0"
+        style="color: white;"
+        viewBox="0 0 16 16"
+        width="35"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+        />
+        <path
+          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

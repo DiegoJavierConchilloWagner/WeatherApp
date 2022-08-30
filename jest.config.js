@@ -21,5 +21,5 @@ module.exports = {
 		'^@services/(.*)$': '<rootDir>/src/app/services/$1',
 		'^@styled/(.*)$': '<rootDir>/src/app/styled/$1'
 	},
-	collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx}', '!**/*.d.ts']
+	collectCoverageFrom: ['<rootDir>/src/app/**/*.{ts,tsx}', '!**/*.d.ts']
 };

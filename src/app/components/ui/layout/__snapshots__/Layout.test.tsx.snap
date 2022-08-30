@@ -1,0 +1,660 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example Layout should render correcty 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 5rem 2rem 5rem;
+  gap: 2rem;
+}
+
+.c4 img {
+  height: 200px;
+}
+
+.c4 h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.c3 {
+  position: absolute;
+  right: 10%;
+  top: 5.2%;
+  cursor: pointer;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50vw;
+  margin: 2rem;
+}
+
+.c1 #searchIcon {
+  position: absolute;
+  z-index: 1;
+  left: 26%;
+  top: 2.7rem;
+}
+
+.c1 input {
+  border-color: transparent;
+  padding: 0.7rem;
+  padding-left: 4rem;
+  background-color: transparent;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  width: 100%;
+  background: rgba(255,255,255,0.15);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 3rem;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input::-moz-placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input:-ms-input-placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input:focus {
+  color: #fff;
+  background: #0d0f40;
+}
+
+.c1 input:focus::-webkit-input-placeholder {
+  color: grey;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.c2 {
+  position: absolute;
+  right: 13%;
+  top: 5%;
+}
+
+@media (max-width:768px) {
+  .c3 {
+    right: 30%;
+    top: 0.8rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    height: 7vh;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    width: 100vw;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 #searchIcon {
+    top: 4.9rem;
+    left: 13%;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    right: 40%;
+    top: 0.7rem;
+  }
+}
+
+<body>
+    <div>
+      <header>
+        <div
+          class="c0"
+        >
+          <div
+            class="c1"
+          >
+            <svg
+              color="white"
+              fill="currentColor"
+              height="35"
+              id="searchIcon"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: white;"
+              viewBox="0 0 512 512"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                fill="none"
+                stroke-miterlimit="10"
+                stroke-width="32"
+              />
+              <path
+                d="M338.29 338.29L448 448"
+                fill="none"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="32"
+              />
+            </svg>
+            <input
+              autocomplete="off"
+              name="search"
+              placeholder="Search for a place here"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 20px; transition: opacity 0.25s; user-select: none;"
+          >
+            <div
+              class="react-switch-bg"
+              style="height: 40px; width: 80px; margin: 0px; position: relative; background: rgb(13, 15, 64); border-radius: 45px; cursor: pointer; transition: background 0.25s;"
+            >
+              <div
+                style="height: 40px; width: 42px; position: relative; opacity: 1; pointer-events: none; transition: opacity 0.25s;"
+              >
+                <div
+                  style="display: flex; justify-content: center; align-items: center; height: 100%; font-size: 25px; color: white; padding-right: 2px; font-family: Poppins;"
+                >
+                  <img
+                    alt="weather"
+                    height="30"
+                    src="SvgrURL"
+                    width="30"
+                  />
+                </div>
+              </div>
+              <div
+                style="height: 40px; width: 42px; position: absolute; opacity: 0; right: 0px; top: 0px; pointer-events: none; transition: opacity 0.25s;"
+              >
+                <div
+                  style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; font-size: 25px; color: white; padding-right: 2px; font-family: Poppins;"
+                >
+                  <img
+                    alt="weather"
+                    height="30"
+                    src="SvgrURL"
+                    width="30"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="react-switch-handle"
+              style="height: 38px; width: 38px; background: rgb(131, 194, 218); display: inline-block; cursor: pointer; border-radius: 44px; position: absolute; transform: translateX(41px); top: 1px; outline: 0; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"
+            />
+            <input
+              aria-checked="true"
+              checked=""
+              role="switch"
+              style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"
+              tabindex="6"
+              type="checkbox"
+            />
+          </div>
+        </div>
+        <div
+          class="c3"
+        >
+          <svg
+            color="white"
+            fill="currentColor"
+            height="35"
+            id="searchIcon"
+            stroke="currentColor"
+            stroke-width="0"
+            style="color: white;"
+            viewBox="0 0 16 16"
+            width="35"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            />
+          </svg>
+        </div>
+      </header>
+      <main>
+        <div
+          class="c4"
+        >
+          <img
+            alt="weather"
+            height="200"
+            src="SvgrURL"
+            width="200"
+          />
+          <h1>
+            There was a problem getting your curren position but don't worry, you can search for a place to see its weather.
+          </h1>
+        </div>
+      </main>
+    </div>
+  </body>,
+  "container": .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 5rem 2rem 5rem;
+  gap: 2rem;
+}
+
+.c4 img {
+  height: 200px;
+}
+
+.c4 h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.c3 {
+  position: absolute;
+  right: 10%;
+  top: 5.2%;
+  cursor: pointer;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50vw;
+  margin: 2rem;
+}
+
+.c1 #searchIcon {
+  position: absolute;
+  z-index: 1;
+  left: 26%;
+  top: 2.7rem;
+}
+
+.c1 input {
+  border-color: transparent;
+  padding: 0.7rem;
+  padding-left: 4rem;
+  background-color: transparent;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  width: 100%;
+  background: rgba(255,255,255,0.15);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 3rem;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input::-moz-placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input:-ms-input-placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1 input:focus {
+  color: #fff;
+  background: #0d0f40;
+}
+
+.c1 input:focus::-webkit-input-placeholder {
+  color: grey;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.c2 {
+  position: absolute;
+  right: 13%;
+  top: 5%;
+}
+
+@media (max-width:768px) {
+  .c3 {
+    right: 30%;
+    top: 0.8rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    height: 7vh;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    width: 100vw;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 #searchIcon {
+    top: 4.9rem;
+    left: 13%;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    right: 40%;
+    top: 0.7rem;
+  }
+}
+
+<div>
+    <header>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <svg
+            color="white"
+            fill="currentColor"
+            height="35"
+            id="searchIcon"
+            stroke="currentColor"
+            stroke-width="0"
+            style="color: white;"
+            viewBox="0 0 512 512"
+            width="35"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+              fill="none"
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+            <path
+              d="M338.29 338.29L448 448"
+              fill="none"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+          </svg>
+          <input
+            autocomplete="off"
+            name="search"
+            placeholder="Search for a place here"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <div
+          style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 20px; transition: opacity 0.25s; user-select: none;"
+        >
+          <div
+            class="react-switch-bg"
+            style="height: 40px; width: 80px; margin: 0px; position: relative; background: rgb(13, 15, 64); border-radius: 45px; cursor: pointer; transition: background 0.25s;"
+          >
+            <div
+              style="height: 40px; width: 42px; position: relative; opacity: 1; pointer-events: none; transition: opacity 0.25s;"
+            >
+              <div
+                style="display: flex; justify-content: center; align-items: center; height: 100%; font-size: 25px; color: white; padding-right: 2px; font-family: Poppins;"
+              >
+                <img
+                  alt="weather"
+                  height="30"
+                  src="SvgrURL"
+                  width="30"
+                />
+              </div>
+            </div>
+            <div
+              style="height: 40px; width: 42px; position: absolute; opacity: 0; right: 0px; top: 0px; pointer-events: none; transition: opacity 0.25s;"
+            >
+              <div
+                style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100%; font-size: 25px; color: white; padding-right: 2px; font-family: Poppins;"
+              >
+                <img
+                  alt="weather"
+                  height="30"
+                  src="SvgrURL"
+                  width="30"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="react-switch-handle"
+            style="height: 38px; width: 38px; background: rgb(131, 194, 218); display: inline-block; cursor: pointer; border-radius: 44px; position: absolute; transform: translateX(41px); top: 1px; outline: 0; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"
+          />
+          <input
+            aria-checked="true"
+            checked=""
+            role="switch"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"
+            tabindex="6"
+            type="checkbox"
+          />
+        </div>
+      </div>
+      <div
+        class="c3"
+      >
+        <svg
+          color="white"
+          fill="currentColor"
+          height="35"
+          id="searchIcon"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: white;"
+          viewBox="0 0 16 16"
+          width="35"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+          />
+          <path
+            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+          />
+        </svg>
+      </div>
+    </header>
+    <main>
+      <div
+        class="c4"
+      >
+        <img
+          alt="weather"
+          height="200"
+          src="SvgrURL"
+          width="200"
+        />
+        <h1>
+          There was a problem getting your curren position but don't worry, you can search for a place to see its weather.
+        </h1>
+      </div>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

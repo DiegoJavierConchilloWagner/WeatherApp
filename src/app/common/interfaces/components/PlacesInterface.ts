@@ -5,7 +5,7 @@ export interface IPlaceMapped {
 	lng: number;
 }
 export interface IPlace {
-	id: number;
+	id: string;
 	place_name: string;
 	center: number[];
 }

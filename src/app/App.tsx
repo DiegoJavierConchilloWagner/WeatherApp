@@ -3,7 +3,7 @@ import ErrorBoundary from '@routes/components/ErrorBoundary';
 import { Routes } from '@routes/Routes';
 import GlobalStyles from '@styled/global';
 import { dark, light } from '@styled/themes/index';
-// import { Toast } from '@components/Toast/Toast';
+import { Toast } from '@components/Toast/Toast';
 
 import { useSelector } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -21,7 +21,7 @@ export const App = () => {
 		<BrowserRouter>
 			<ThemeProvider theme={onSwitchTeme}>
 				<GlobalStyles />
-				{/* <Toast /> */}
+				<Toast />
 				<ErrorBoundary>
 					<Routes />
 				</ErrorBoundary>

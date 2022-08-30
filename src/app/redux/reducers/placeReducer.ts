@@ -15,6 +15,12 @@ export const placeReducer = (state = initialState, action = {} as ActionType) =>
 			return {
 				selectedPlace: action.payload
 			};
+
+		case Types.resetPlaceData:
+			return {
+				selectedPlace: initialState.selectedPlace
+			};
+
 		default:
 			return state;
 	}

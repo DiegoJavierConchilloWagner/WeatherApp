@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example Suggestion should render correcty 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  color: #fff;
+  font-family: Poppins;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.c0:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+
+.c0:hover:after,
+.c0:focus:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  outline: none;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .c0:not(:last-child) {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+<body>
+    <div>
+      <a
+        class="c0"
+      >
+        <p>
+          Buenos Aires
+        </p>
+      </a>
+    </div>
+  </body>,
+  "container": .c0 {
+  color: #fff;
+  font-family: Poppins;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.c0:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+
+.c0:hover:after,
+.c0:focus:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  outline: none;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .c0:not(:last-child) {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+<div>
+    <a
+      class="c0"
+    >
+      <p>
+        Buenos Aires
+      </p>
+    </a>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
