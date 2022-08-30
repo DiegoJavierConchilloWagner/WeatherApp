@@ -1,11 +1,7 @@
-export type ThemeMode = string | 'LIGHT' | 'DARK'
-
-export type TemperatureUnit = string | '° F' | '° C' | '° K'
-
-export type ForecastMode = string | 'DAYS' | 'HOUR'
+import { ThemeModeType, TemperatureUnitType, ForecastModeType } from '@common/types';
 
 export interface UiInterface {
-	themeMode: ThemeMode
-	temperatureUnit: TemperatureUnit
-	forecast: ForecastMode
+	themeMode: ThemeModeType;
+	temperatureUnit: TemperatureUnitType;
+	forecast: ForecastModeType;
 }

@@ -1,7 +1,6 @@
-import { IPlaceMapped } from '@common/interfaces/components/PlacesInterface'
-import { Types } from '../types/types'
+import { IPlaceMapped, Types } from '@common/index';
 
 export const setSelectedPlace = (data: IPlaceMapped) => ({
 	type: Types.setSelectedPlace,
 	payload: data
-})
+});

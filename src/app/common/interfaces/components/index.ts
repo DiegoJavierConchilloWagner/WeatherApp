@@ -1,1 +1,1 @@
-export * from './PlacesInterface'
+export * from './PlacesInterface';

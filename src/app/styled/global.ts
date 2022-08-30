@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
@@ -15,8 +15,9 @@ export default createGlobalStyle`
         background: ${({ theme }) => theme.colors.gradientBackground.background} no-repeat, ${({ theme }) =>
 	theme.colors.gradientBackground.repeat} repeat;
     }
+
     
     main{
         padding: 0 16px;
     }
-`
+`;

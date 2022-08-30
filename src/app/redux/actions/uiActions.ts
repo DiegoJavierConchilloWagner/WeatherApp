@@ -1,17 +1,16 @@
-import { ThemeMode } from '@common/interfaces/redux/UiInterface'
-import { ForecastMode, TemperatureUnit, Types } from '../types/types'
+import { ThemeModeType, TemperatureUnitType, ForecastModeType, Types } from '@common/index';
 
-export const setThemeMode = (data: ThemeMode) => ({
+export const setThemeMode = (data: ThemeModeType) => ({
 	type: Types.setThemeMode,
 	payload: data
-})
+});
 
-export const setCurrentTemperatureUnit = (data: TemperatureUnit) => ({
+export const setCurrentTemperatureUnit = (data: TemperatureUnitType) => ({
 	type: Types.setTemperatureUnit,
 	payload: data
-})
+});
 
-export const setForecast = (data: ForecastMode) => ({
+export const setForecast = (data: ForecastModeType) => ({
 	type: Types.setForecast,
 	payload: data
-})
+});

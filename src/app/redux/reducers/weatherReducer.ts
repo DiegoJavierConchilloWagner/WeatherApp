@@ -1,5 +1,4 @@
-import { WeatherInterface } from '@common/interfaces/redux/WeatherInterface'
-import { ActionType, Types } from '../types/types'
+import { WeatherInterface, ActionType, Types } from '@common/index';
 
 const initialState: WeatherInterface = {
 	current: {
@@ -35,7 +34,7 @@ const initialState: WeatherInterface = {
 			icon: ''
 		}
 	]
-}
+};
 
 export const weatherReducer = (state = initialState, action = {} as ActionType) => {
 	switch (action.type) {
@@ -43,18 +42,18 @@ export const weatherReducer = (state = initialState, action = {} as ActionType) 
 			return {
 				...state,
 				current: action.payload
-			}
+			};
 		case Types.setTwoDaysWeather:
 			return {
 				...state,
 				twoDays: action.payload
-			}
+			};
 		case Types.setWeekWeather:
 			return {
 				...state,
 				week: action.payload
-			}
+			};
 		default:
-			return state
+			return state;
 	}
-}
+};

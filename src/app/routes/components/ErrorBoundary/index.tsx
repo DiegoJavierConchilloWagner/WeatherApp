@@ -1,29 +1,29 @@
-import { Component, ReactNode } from 'react'
+import { Component, ReactNode } from 'react';
 
 interface Props {
-	children: ReactNode
+	children: ReactNode;
 }
 
 interface State {
-	hasError: boolean
+	hasError: boolean;
 }
 
 export default class ErrorBoundary extends Component<Props, State> {
 	constructor(props: { children: ReactNode }) {
-		super(props)
-		this.state = { hasError: false }
+		super(props);
+		this.state = { hasError: false };
 	}
 
 	static getDerivedStateFromError() {
-		return { hasError: true }
+		return { hasError: true };
 	}
 
 	render() {
-		const { hasError } = this.state
-		const { children } = this.props
+		const { hasError } = this.state;
+		const { children } = this.props;
 		if (hasError) {
-			return <h1>Algo deu errado.</h1>
+			return <h1>Something went wrong.</h1>;
 		}
-		return children
+		return children;
 	}
 }

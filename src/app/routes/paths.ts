@@ -1,12 +1,12 @@
-import { lazy } from 'react'
+import { lazy } from 'react';
 
-export const Example = lazy(() =>
-	import('@pages/Example/Example').then(module => ({
-		default: module.Example
+export const Home = lazy(() =>
+	import('@pages/Home/Home').then((module) => ({
+		default: module.Home
 	}))
-)
+);
 export const GenericNotFound = lazy(() =>
-	import('@pages/GenericNotFound/GenericNotFound').then(module => ({
+	import('@pages/GenericNotFound/GenericNotFound').then((module) => ({
 		default: module.GenericNotFound
 	}))
-)
+);

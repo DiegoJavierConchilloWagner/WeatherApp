@@ -1,4 +1,4 @@
-export default {
+export const dark = {
 	title: 'DARK',
 
 	fonts: {
@@ -46,4 +46,4 @@ export default {
 	boxShadow: {
 		color: '#fff'
 	}
-}
+};

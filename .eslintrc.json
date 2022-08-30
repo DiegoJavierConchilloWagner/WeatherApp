@@ -24,7 +24,7 @@
 	},
 	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
 	"rules": {
-		"prettier/prettier": ["error", { "semi": false, "endOfLine": "auto" }, { "usePrettierrc": true }],
+		"prettier/prettier": ["error", { "semi": true, "endOfLine": "auto" }, { "usePrettierrc": true }],
 		"react/jsx-props-no-spreading": "off",
 		"react/prop-types": "off",
 		"import/no-extraneous-dependencies": ["error", { "devDependencies": true }],

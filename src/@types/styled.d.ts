@@ -1,53 +1,53 @@
-import 'styled-components'
+import 'styled-components';
 
 declare module 'styled-components' {
 	export interface DefaultTheme {
-		title: string
+		title: string;
 
 		fonts: {
-			primary: string
-			secondary: string
-		}
+			primary: string;
+			secondary: string;
+		};
 
 		colors: {
 			gradientBackground: {
-				background: string
-				repeat: string
-			}
+				background: string;
+				repeat: string;
+			};
 
 			placeholder: {
-				color: string
-			}
+				color: string;
+			};
 
 			background: {
-				color: string
-			}
+				color: string;
+			};
 
 			border: {
-				color: string
-			}
+				color: string;
+			};
 
 			switch: {
-				primary: string
-				secondary: string
-			}
+				primary: string;
+				secondary: string;
+			};
 
 			typography: {
-				primary: string
-				secondary: string
-			}
+				primary: string;
+				secondary: string;
+			};
 
 			underline: {
-				color: string
-			}
+				color: string;
+			};
 
 			inputs: {
-				color: string
-			}
-		}
+				color: string;
+			};
+		};
 
 		boxShadow: {
-			color: string
-		}
+			color: string;
+		};
 	}
 }
