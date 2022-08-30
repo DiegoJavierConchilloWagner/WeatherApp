@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.0.1",
   "main": "src/index.tsx",
-  "description": "React.js starter with TypeScript, Styled-Components, Jest, Testing-Library, eslint, prettier, husky",
+  "description": "WeatherApp",
   "keywords": [
     "WeatherApp",
     "React.js",
@@ -14,8 +14,8 @@
   "homepage": "https://github.com/DiegoJavierConchilloWagner",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve --mode development --open --config webpack.ts",
-    "build": "webpack --mode production --config webpack.ts",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development --open --config webpack.ts",
+    "build": "cross-env NODE_ENV=production webpack --mode production --config webpack.ts",
     "build:server": "docker-compose build & docker run --name $npm_package_name -p 80:80 -d $npm_package_name\\_nginx",
     "test": "jest",
     "test:coverage": "jest --coverage --watchAll=false",
@@ -70,6 +70,7 @@
     "@typescript-eslint/parser": "^5.35.1",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.3.0",
     "eslint": "^8.6.0",
     "eslint-config-airbnb": "^19.0.4",

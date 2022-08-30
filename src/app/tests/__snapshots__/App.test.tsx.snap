@@ -3,23 +3,117 @@
 exports[`Example Page should render correcty 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c0 {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.c0 div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation-timing-function: cubic-bezier(0,1,1,0);
+  animation-timing-function: cubic-bezier(0,1,1,0);
+}
+
+.c0 div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.c0 div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.c0 div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.c0 div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+<body>
     <div>
       <div
         class="Toastify"
       />
-      <p>
-        Cargando..
-      </p>
+      <div
+        class="c0 lds-ellipsis"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
     </div>
   </body>,
-  "container": <div>
+  "container": .c0 {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.c0 div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation-timing-function: cubic-bezier(0,1,1,0);
+  animation-timing-function: cubic-bezier(0,1,1,0);
+}
+
+.c0 div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.c0 div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.c0 div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.c0 div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+<div>
     <div
       class="Toastify"
     />
-    <p>
-      Cargando..
-    </p>
+    <div
+      class="c0 lds-ellipsis"
+    >
+      <div />
+      <div />
+      <div />
+      <div />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

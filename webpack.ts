@@ -11,11 +11,13 @@ const htmlPlugin = new HtmlWebpackPlugin({
 	template: path.resolve(__dirname, 'public', 'index.html')
 });
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
 const dotEnv = new Dotenv({
-	defaults: true
+	// defaults: false
+	path: isDevelopment ? '.env.development' : '.env.production'
 });
 
-const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const config = {
 	mode: isDevelopment ? 'development' : 'production',
@@ -86,7 +88,8 @@ const config = {
 		react: 'React',
 		'react-dom': 'ReactDOM'
 	},
-	plugins: [htmlPlugin, dotEnv, isDevelopment && new ReactRefreshWebpackPlugin()].filter(Boolean)
+	plugins: [htmlPlugin, dotEnv, isDevelopment && new ReactRefreshWebpackPlugin()].filter(Boolean),
+	optimization: {},
 };
 
 module.exports = config;

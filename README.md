@@ -1,7 +1,7 @@
 <h1 align="center">
     <img alt="template-react-ts" src="https://res.cloudinary.com/zagatti/image/upload/v1595947810/readme/react-ts-template/Al9qmDn_j0eiug.png" />
     <br>
-    WeatherApp
+    🌞 WeatherApp - React + TS 🌧
 </h1>
 
 <p align="center">
@@ -14,13 +14,13 @@
 
 ## ℹ️ About
 
-<div align="center">
+Live version - [Here](https://visionary-medovik-059e92.netlify.app/)
 
-  <p align="center">
-    I recently started using React by creating my own Webpack and configuring the project as I think it looks best, so I created this initial template and I intend to keep it updated.
-  </p>
+APIs used:
 
-</div>
+[MapBox - Geolocation](https://www.mapbox.com/)
+
+[OpenWeather - Weather](https://openweathermap.org/api)
 
 ## 🖥 Packages
 
@@ -32,6 +32,10 @@ The project was started with the following packages:
 - [React Router Dom](https://reacttraining.com/react-router/web/)
 - [Styled Components](https://styled-components.com/)
 - [Typescript](https://www.typescriptlang.org/)
+- [Axios](https://axios-http.com/docs/intro/)
+- [Dayjs](https://day.js.org/)
+- [React-icons](https://react-icons.github.io/react-icons/)
+
 
 In the dev dependencies the Webpack, Jest, Fast Refresh, Eslint and Prettier are configured.
 
@@ -45,7 +49,7 @@ Press the `Use this template` button on Github and create your own repository.
 
 Clone your repo to your local machine.
 
-1. `git clone my-app`
+1. `git clone https://github.com/DiegoJavierConchilloWagner/WeatherApp`
 2. `cd my-app`
 3. `yarn` or `npm install`
 4. `yarn start` or `npm run start`

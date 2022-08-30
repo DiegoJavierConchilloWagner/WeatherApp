@@ -1,10 +1,11 @@
+import { Loader } from '@components/Loader/Loader';
 import { Suspense } from 'react';
 import { Navigate, Route, Routes as RoutesReactRouterDom } from 'react-router-dom';
 import { Home, GenericNotFound } from './paths';
 
 export const Routes = () => {
 	return (
-		<Suspense fallback={<p>Cargando..</p>}>
+		<Suspense fallback={<Loader />}>
 			<RoutesReactRouterDom>
 				<Route path='/' element={<Home />} />
 
